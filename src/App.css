@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  /* navbar */
+  .fixed-top{
+  
+    display: block;
   }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(251, 248, 248);
+  }
+  
+  li {
+    float: left;
+    justify-content: space-evenly;
+  }
+  
+  li a {
+    display: block;
+    color: rgb(17, 1, 1);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+   
+    
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+    color: aqua;
+  }
+  
+  #Home{
+    font-size: 20px;
+  }
+  #Csr{
+    font-size: 20px;
+  }
+  #Contact{
+    font-size: 20px;
+  }
+  #about{
+    font-size: 20px;
+  }
+  #icon_1{
+    margin-top: 20px;
+    margin-left: 550px;
+   
+  }
+  
+/* home */
+.Home_Container{
+  display:inline-block ;
+  margin: 0;
+}
+.yurScr{
+  margin-top: 50%;
+  font-size: 200px;
+}
+/* Home Add */
+#scroll-container {
+  border: 3px solid black;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#Text_Scroll {
+  /* animation properties */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  
+  -moz-animation: my-animation 15s linear infinite;
+  -webkit-animation: my-animation 15s linear infinite;
+  animation: my-animation 15s linear infinite;
 }
 
-.App-link {
-  color: #61dafb;
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateX(100%); }
+  to { -moz-transform: translateX(-100%); }
 }
 
-@keyframes App-logo-spin {
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateX(100%); }
+  to { -webkit-transform: translateX(-100%); }
+}
+
+@keyframes my-animation {
   from {
-    transform: rotate(0deg);
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
   }
   to {
-    transform: rotate(360deg);
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
   }
 }
+
+/* credit score adds */
+
